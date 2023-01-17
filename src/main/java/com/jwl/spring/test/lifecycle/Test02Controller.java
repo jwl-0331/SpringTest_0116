@@ -92,6 +92,8 @@ public class Test02Controller {
 		content.setUser("hagulu");
 		content.setContent("안녕하세요. 가입했어요. 앞으로 잘 부탁 드립니다. 활동 열심히 하겠습니다.");
 		
+		//RespinseEntity<BoardContent> entity = new ResponseEntity(content, HttpStatus.INTERNAL_SERVER_ERROR);
+		//return entitiy;
 		return new ResponseEntity<>(content, HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 }
